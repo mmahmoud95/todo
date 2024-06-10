@@ -41,7 +41,7 @@ const Login = () => {
                 toast.success(data.msg);
                 setFormData({ email: '', password: '' });
                 setTimeout(() => {
-                    router.push('/todos');
+                    router.push('/');
                 }, 1000);
             } else {
                 toast.error(data.msg || 'login failed');
